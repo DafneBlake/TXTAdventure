@@ -18,16 +18,17 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        textoPreguntas.text = preguntas[0];
+        Debug.Log("Hola c:");
+        textoPreguntas.text = preguntas[indicePregunta];
 
         palabrasGuardadas = new string[preguntas.Length];
 
     }
 
-    public void guardarRespuesta()
+    public void GuardarRespuesta()
     {
         //Guardar lo que escribió el jugador
-        palabrasGuardadas[0] = inputRespuesta.text;
+        palabrasGuardadas[indicePregunta] = inputRespuesta.text;
 
         //Limpiar el texto
         inputRespuesta.text = "";
@@ -38,7 +39,7 @@ public class GameManager : MonoBehaviour
         //Comrobación
         if (indicePregunta >= preguntas.Length)
         {
-            mostrarHistoria();
+            MostrarHistoria();
         }
         else
         {
@@ -46,7 +47,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void mostrarHistoria()
+    void MostrarHistoria()
     {
         //TODO Mostrar un nuevo text mesh que tenga toda la historia
         textoHistoria.gameObject.SetActive(true);
