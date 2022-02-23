@@ -5,9 +5,9 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] private string[] palabrasGuardadas;
-    [SerializeField] private string[] preguntas;
-    [SerializeField] private string historia;
+    [SerializeField] string[] palabrasGuardadas;
+    [SerializeField] string[] preguntas;
+    [SerializeField] string historia;
 
     [SerializeField] TextMeshProUGUI textoPreguntas;
     [SerializeField] TextMeshProUGUI textoHistoria;
@@ -18,11 +18,8 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("Hola c:");
         textoPreguntas.text = preguntas[indicePregunta];
-
         palabrasGuardadas = new string[preguntas.Length];
-
     }
 
     public void GuardarRespuesta()
@@ -51,7 +48,7 @@ public class GameManager : MonoBehaviour
     {
         //TODO Mostrar un nuevo text mesh que tenga toda la historia
         textoHistoria.gameObject.SetActive(true);
-        textoHistoria.text = historia;
+        textoHistoria.text = string.Format(historia, palabrasGuardadas);
 
         //TODO ocultar los elementos que no se utilizan
         textoPreguntas.gameObject.SetActive(false);

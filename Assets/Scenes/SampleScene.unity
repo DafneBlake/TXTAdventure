@@ -481,9 +481,9 @@ MonoBehaviour:
   - Cual es el nombre de tu patito?
   - Cual es el nombre de tu?
   - ayudaaa
-  historia: "Hola soy {nombre}! as\xED dice en mi placa Tengo apenas {a\xF1os} Mi
-    due\xF1o es {nombre del jugador} y esta ocupado pero quiero jugar el es una persona
-    muuuy {adjetivo}  y me agrada cuando me lleva a {lugar}"
+  historia: "Hola soy {0}! as\xED dice en mi placa Tengo apenas {1} Mi due\xF1o es
+    {nombre del jugador} y esta ocupado pero quiero jugar el es una persona muuuy
+    {adjetivo}  y me agrada cuando me lleva a {lugar}"
   textoPreguntas: {fileID: 1772944273}
   textoHistoria: {fileID: 2128449860}
   inputRespuesta: {fileID: 1737588308}
@@ -542,7 +542,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_RenderShadows: 1
+  m_RenderShadows: 0
   m_RequiresDepthTextureOption: 2
   m_RequiresOpaqueTextureOption: 2
   m_CameraType: 0
@@ -736,7 +736,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
