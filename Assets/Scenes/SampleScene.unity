@@ -612,13 +612,13 @@ MonoBehaviour:
   palabrasGuardadas: []
   preguntas:
   - Cual es el nombre de tu perrito?
-  - Cual es el nombre de tu gatito?
-  - Cual es el nombre de tu patito?
-  - Cual es el nombre de tu?
-  - ayudaaa
-  historia: "Hola soy {0}! as\xED dice en mi placa Tengo apenas {1} Mi due\xF1o es
-    {nombre del jugador} y esta ocupado pero quiero jugar el es una persona muuuy
-    {adjetivo}  y me agrada cuando me lleva a {lugar}"
+  - Cual es la edad de tu perrito?
+  - Cual es tu nombre?
+  - Elige un adjetivo positivo para describirte
+  - Nombra un lugar para pasear
+  historia: "Hola soy {0}! as\xED dice en mi placa, Tengo apenas {1} a\xF1os. Mi
+    due\xF1o es {2} y esta ocupado pero quiero jugar el es una persona muuuy {3} 
+    y me agrada cuando me lleva a {4}"
   textoPreguntas: {fileID: 1772944273}
   textoHistoria: {fileID: 2128449860}
   inputRespuesta: {fileID: 1737588308}
@@ -1100,7 +1100,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -69}
+  m_AnchoredPosition: {x: 0, y: -114}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1737588308
